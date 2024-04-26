@@ -13,7 +13,7 @@ then
     echo "AWS CLI could not be found. Please install it."
     exit
 fi
-
+ 
 # Check if at least one argument is provided
 if [ "$#" -ne 1 ]; then
   usage
