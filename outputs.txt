@@ -1,0 +1,19 @@
+Key                 DocumentBucketName
+Description         S3 bucket where LanceDB sources embeddings. Check this repository README for instructions on how to import your documents
+Value               chatbot-rag-us-east-1-767397720274
+
+Key                 DocumentTableName
+Description         Name of the Document Table in LanceDB
+Value               doc_table
+
+Key                 DocumentProcessorFunctionIamRole
+Description         Implicit IAM Role created for Document Processor function
+Value               arn:aws:iam::767397720274:role/chatbot-rag-DocumentProcessorFunctionRole-LMLZnLQSpKKW
+
+Key                 DeploymentRegion
+Description         Where this stack is deployed
+Value               us-east-1
+
+Key                 DocumentProcessorFunction
+Description         Lambda Function ARN
+Value               arn:aws:lambda:us-east-1:767397720274:function:chatbot-rag-DocumentProcessorFunction-5OYMNPD8SUFk
