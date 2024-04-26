@@ -49,5 +49,5 @@ AWS_REGION=$(aws cloudformation \
     --query 'Stacks[0].Outputs[?OutputKey==`DeploymentRegion`].OutputValue' \
     --output text\
     )
-    
+
 node ./document-processor/client.mjs $DOCUMENT_BUCKET $DOCUMENT_TABLE $PROMPT_PATH $AWS_REGION
