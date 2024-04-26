@@ -55,6 +55,8 @@ cd ..
 
 ### Prepare for Ingestion
 note: for windows : For running shell scripts and general development, it's recommended to install a full-featured Linux distribution like Ubuntu, Debian, or CentOS. You can install these from the Microsoft Store.
+Switch to the Ubuntu distribution by typing 
+wsl -d Ubuntu
 
 Place the `.pdf` documents you want to ingest in `./documents`.  
 Start the upload to the S3 bucket with the following  
