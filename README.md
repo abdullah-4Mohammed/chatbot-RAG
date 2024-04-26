@@ -43,7 +43,9 @@ sam build && sam deploy
 ## Testing
 
 ### Install Dependencies
-Install the dependencies with  
+note: for windows : you need to change the dependency 
+Install the dependencies with @lancedb/vectordb with a windows one like "@lancedb/vectordb-win32-x64-msvc": "^0.4.16",
+
 ```bash
 cd ./document-processor
 nvm use
@@ -52,8 +54,11 @@ cd ..
 ```
 
 ### Prepare for Ingestion
+note: for windows : For running shell scripts and general development, it's recommended to install a full-featured Linux distribution like Ubuntu, Debian, or CentOS. You can install these from the Microsoft Store.
+
 Place the `.pdf` documents you want to ingest in `./documents`.  
 Start the upload to the S3 bucket with the following  
+note: for windows : 
 ```bash
 ./10-ingest.sh <your-stack-name>
 ```
